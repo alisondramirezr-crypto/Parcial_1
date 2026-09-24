@@ -53,9 +53,6 @@ public class Supermercado {
                 ", lista de compras: " + listaCompras;
     }
 
-    // =======================================================
-    //             MÉTODOS DECLARADOS EN EL DIAGRAMA UML
-    // =======================================================
 
     //Metodo Verifircar cliente
     public boolean verificarCliente (int documentoIdentidad){
