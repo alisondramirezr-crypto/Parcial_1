@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Compra {
 
+    //Atributos
     private int codigoCompra;
     private LocalDate fecha;
     private MetodoPago metodoPago;
@@ -11,6 +12,7 @@ public class Compra {
     private Cliente cliente;
     private List<DetalleCompra> listaDetalles;
 
+    //Constructor
     public Compra(int codigoCompra, LocalDate fecha, MetodoPago metodoPago, Cliente cliente) {
         this.codigoCompra = codigoCompra;
         this.fecha = fecha;
@@ -45,6 +47,7 @@ public class Compra {
         cliente.agregarCompra(this);
     }
 
+    //Getters y setters
     public int getCodigoCompra() {
         return codigoCompra;
     }
@@ -93,15 +96,15 @@ public class Compra {
         this.listaDetalles = listaDetalles;
     }
 
+    //toString ()
     @Override
     public String toString() {
         return "Compra: " +
-                "\nCodigo de compra= " + codigoCompra +
-                "\nfecha= " + fecha +
-                "\nMetodoPago= " + metodoPago + " | " +
-                "valorTotal= " + valorTotal + " | " +
-                "cliente= " + cliente.getNombreCompleto() + " | " +
-                "detalles= " + listaDetalles +
-                '}' + " | ";
+                "\nCodigo de compra: " + codigoCompra +
+                "\nFecha: " + fecha +
+                "\nMetodo de pago: " + metodoPago +
+                "\nValor de total: " + valorTotal +
+                "\nCliente: " + cliente.getNombreCompleto() +
+                "\nDetalles: " + listaDetalles;
     }
 }
