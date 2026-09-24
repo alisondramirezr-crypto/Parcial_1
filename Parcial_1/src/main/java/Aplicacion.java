@@ -47,7 +47,7 @@ public class Aplicacion {
                     System.out.print("Correo Electrónico: ");
                     String correoCli = sc.nextLine();
 
-                    //Verificación
+
                     Cliente cliente = new Cliente(nombreCli, docCli, telCli, correoCli);
                     if (supermercado.registrarCliente(cliente)){
                         System.out.println("Cliente agregado correctamente");
